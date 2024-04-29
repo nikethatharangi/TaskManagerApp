@@ -1,0 +1,45 @@
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12 mt-3 mb-1">
+      <h1 class="text-uppercase">Dashboard</h1>
+      <p>Task Details</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-6 col-sm-6 col-6"> 
+      <div class="card">
+        <div class="card-content">
+          <div class="card-body">
+            <div class="media d-flex">
+              <div class="align-self-center">
+                <i class="icon-pencil primary font-large-2 float-left"></i>
+              </div>
+              <div class="media-body text-right">
+                <h3>{{ totalTasks }}</h3>
+                <span>Total Tasks</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6 col-sm-6 col-6">
+      <div class="card">
+        <div class="card-content">
+          <div class="card-body">
+            <div class="media d-flex">
+              <div class="align-self-center">
+                <i class="icon-speech warning font-large-2 float-left"></i>
+              </div>
+              <div class="media-body text-right">
+                <h3>{{ dueTodayTasks }}</h3>
+                <span>Today DueDate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

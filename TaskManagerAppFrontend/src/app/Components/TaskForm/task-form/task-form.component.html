@@ -1,0 +1,26 @@
+<div class="container my-5">
+  <h2 class="mb-3">{{ isUpdateMode ? 'Edit Task' : 'Create Task' }}</h2>
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+      <div *ngIf="isUpdateMode" class="form-group">
+        <label for="id">ID</label>
+        <input type="text" id="id" class="form-control" formControlName="id" readonly>
+      </div>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" class="form-control" formControlName="title" placeholder="Enter task title">
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" class="form-control" formControlName="description" rows="3" placeholder="Enter task description"></textarea>
+      </div>
+      <div class="form-group mb-3" >
+        <label for="dueDate">Due Date</label>
+        <input type="date" id="dueDate" class="form-control" formControlName="dueDate">
+      </div>
+      <button type="submit" class="btn btn-primary" style="margin-right: 10px;">Submit</button>
+      
+    </form>
+  </div>
+
+  
+  
